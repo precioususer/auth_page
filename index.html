@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-img"></div>
+      <div class="auth">
+        <form class="auth-block" action="" aria-required="true">
+          <input class="log-input login" placeholder="Login" required />
+          <input
+            class="log-input password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+
+          <div class="choose">
+            <label for="sex">Sex:</label>
+            <input type="radio" id="male" name="sex" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="sex" />
+            <label for="other">Not a human creature</label>
+          </div>
+
+          <div class="choose">
+            <label for="username">What's better?:</label>
+            <input type="checkbox" />
+            <label for="sex">Ass</label>
+            <input type="checkbox" />
+            <label for="sex">Tits</label>
+          </div>
+
+          <div class="choose">
+            <label for="username">Choose avatar:</label>
+            <input class="file-input" type="file" required />
+          </div>
+
+          <textarea
+            name="message"
+            placeholder="Tell about yourself"
+            required
+          ></textarea>
+          <div class="buttons">
+            <button class="button check" type="submit">Send</button>
+            <button class="button clear" type="reset">Clear form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

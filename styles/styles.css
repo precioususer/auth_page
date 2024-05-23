@@ -1,0 +1,93 @@
+@import "./reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --PADDING: 10px;
+}
+
+.container {
+  font-family: Rubik;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.side-img {
+  display: flex;
+  background-image: url(./../src/img.webp);
+  width: 50%;
+}
+
+.auth {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-block {
+  background-image: linear-gradient(45deg, rgb(51, 75, 48), rgb(142, 155, 104));
+  width: 350px;
+  border-radius: 20px;
+  padding: var(--PADDING);
+  flex-direction: column;
+  textarea {
+    width: calc(100% - var(--PADDING));
+    max-width: calc(100% - var(--PADDING));
+    margin-bottom: var(--PADDING);
+    font-size: inherit;
+    border-radius: var(--PADDING);
+    padding: 5px;
+    background-color: black;
+    border: 0;
+    opacity: 0.5;
+    color: aliceblue;
+  }
+}
+
+.log-input {
+  width: calc(100% - var(--PADDING));
+  margin-bottom: var(--PADDING);
+  border-radius: var(--PADDING);
+  height: 25px;
+  font-size: inherit;
+  background-color: black;
+  border: 0;
+  opacity: 0.5;
+  color: aliceblue;
+}
+
+.choose {
+  display: flex;
+  margin-bottom: var(--PADDING);
+  width: calc(100% - var(--PADDING));
+  align-items: baseline;
+  justify-content: space-between;
+  input {
+    font-size: inherit;
+  }
+  .file-input {
+    width: 200px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  gap: var(--PADDING);
+  button {
+    height: 30px;
+    font-size: inherit;
+    width: 50%;
+    border-radius: var(--PADDING);
+    background-color: black;
+    border: 0;
+    opacity: 0.5;
+    color: aliceblue;
+  }
+}
