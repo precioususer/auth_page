@@ -75,6 +75,8 @@
   background-color: var(--MAIN_COLOR);
   color: var(--SECONDARY_COLOR);
 
+  transition-duration: 1s;
+
   .log-input::placeholder {
     color: var(--SECONDARY_COLOR);
   }
@@ -159,6 +161,23 @@
   background-color: var(--SECONDARY_COLOR);
   border: 0;
   color: var(--MAIN_COLOR);
+  transition-duration: 0.5s;
+}
+
+.check:hover {
+  box-shadow: inset 0 0 20px rgb(1, 189, 1);
+}
+
+.clear:hover {
+  box-shadow: inset 0 0 20px rgb(235, 66, 15);
+}
+
+.check:active {
+  background-color: rgb(1, 189, 1);
+}
+
+.clear:active {
+  background-color: rgb(235, 66, 15);
 }
 
 /* ----- MEDIA QUERY ----- */
