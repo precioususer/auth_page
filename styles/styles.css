@@ -1,14 +1,19 @@
 @import "./reset.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Ubuntu+Sans+Mono:wght@400..700&display=swap");
 
 :root {
   --PADDING: 10px;
+  --MAIN_COLOR: white;
+  --SECONDARY_COLOR: black;
+  --BORDER_SIZE: 3px;
 }
 
 .container {
-  font-family: Rubik;
-  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--SECONDARY_COLOR);
   font-size: 15px;
   display: flex;
   flex-direction: row;
@@ -18,8 +23,9 @@
 
 .side-img {
   display: flex;
-  background-image: url(./../src/img.webp);
+  background-image: url(./../src/img.jpg);
   width: 50%;
+  border-right: calc(var(--BORDER_SIZE) * 2) solid var(--SECONDARY_COLOR);
 }
 
 .auth {
@@ -30,7 +36,8 @@
 }
 
 .auth-block {
-  background-image: linear-gradient(45deg, rgb(51, 75, 48), rgb(142, 155, 104));
+  border: var(--BORDER_SIZE) solid var(--SECONDARY_COLOR);
+  color: inherit;
   width: 350px;
   border-radius: 20px;
   padding: var(--PADDING);
@@ -42,10 +49,12 @@
     font-size: inherit;
     border-radius: var(--PADDING);
     padding: 5px;
-    background-color: black;
-    border: 0;
-    opacity: 0.5;
-    color: aliceblue;
+    background-color: var(--MAIN_COLOR);
+    border: inherit;
+    color: var(--SECONDARY_COLOR);
+  }
+  .textarea::placeholder {
+    color: var(--SECONDARY_COLOR);
   }
 }
 
@@ -55,10 +64,12 @@
   border-radius: var(--PADDING);
   height: 25px;
   font-size: inherit;
-  background-color: black;
-  border: 0;
-  opacity: 0.5;
-  color: aliceblue;
+  background-color: var(--MAIN_COLOR);
+  border: 3px solid var(--SECONDARY_COLOR);
+  color: var(--SECONDARY_COLOR);
+  .log-input::placeholder {
+    color: var(--SECONDARY_COLOR);
+  }
 }
 
 .choose {
@@ -85,9 +96,19 @@
     font-size: inherit;
     width: 50%;
     border-radius: var(--PADDING);
-    background-color: black;
+    background-color: var(--SECONDARY_COLOR);
     border: 0;
-    opacity: 0.5;
-    color: aliceblue;
+    color: var(--MAIN_COLOR);
   }
+}
+
+/* ----- MEDIA QUERY ----- */
+
+@media (min-width: 350px) and (max-width: 600px) {
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+}
+
+@media (min-width: 1100px) {
 }
